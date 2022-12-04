@@ -5,9 +5,7 @@ body {
     background-size: 1200px;
     font-family: "Roboto", sans-serif;
 }
-header {
-    /* margin-top: 60px; */
-}
+
 .container {
     background-color: #f1f1f1;
     max-width: 1200px;
@@ -76,13 +74,13 @@ main a {
     color: black;
     transition: ease-in-out 0.2s;
 }
+main a:visited {
+    color: grey;
+}
 main a:hover {
     color: white;
     scale: 1.1;
     background-color: black;
-}
-main a:visited {
-    color: grey;
 }
 
 table {
@@ -141,4 +139,28 @@ form h2 {
     padding: 15px 0 10px;
     outline: none;
     font-family: inherit;
+}
+
+@media (max-width: 520px) {
+    header {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .ava {
+        margin: auto;
+    }
+    .ava img {
+        width: 160px;
+    }
+    .socialmedia {
+        margin: auto;
+        width: 100%;
+    }
+    table {
+        font-size: 10px;
+    }
+    .btn {
+        display: block;
+        margin: auto;
+    }
 }
